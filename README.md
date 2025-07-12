@@ -4,13 +4,9 @@
 
 ## **SSH-FD Overview**
 
-In this project, we introduce **SSH-FD**, an advanced approach for detecting SSH communication within tunneled traffic. Our framework operates in multiple stages to effectively isolate and identify SSH communication, even when encapsulated within other protocols. The process begins by splitting the tunneled traffic into **bursts**—small segments representing transient network behaviors within short time windows. These bursts serve as the primary units for feature extraction, helping to isolate SSH communication from other types of traffic.
-
-To enhance the model's ability to detect subtle differences in tunneled traffic, we perform **spatio-temporal feature processing**. This includes the normalization and distribution optimization of both packet length and interval time, which emphasizes the variations in traffic patterns that are critical for detection. Subsequently, we convert the burst-level features into a **frequency-domain representation**, mapping the raw flow features into frequency domain signals. By aggregating the signals from the packets within a burst, we create a unified and consistent representation that captures key characteristics of the tunneled traffic.
-
-For detecting SSH communication, we utilize an **encoder-decoder model** based on **recurrent neural networks** (RNNs). This model processes the sequence of bursts while preserving the temporal characteristics of the traffic, enabling effective flow-level SSH detection. To balance detection performance at both the burst and flow levels, **multi-scale supervision** is introduced, ensuring that the model maintains sensitivity without being overly influenced by individual burst anomalies.
-
-The overall architecture of **SSH-FD** is depicted in **Fig** below:
+In this project, we introduce **SSH-FD**, a method for detecting SSH communication within tunneled traffic. The framework works by splitting the tunneled traffic into **bursts**, small segments that represent transient network behaviors. These bursts are processed to extract relevant features and then converted into a **frequency-domain representation** to capture key traffic characteristics. This method enables precise identification of SSH traffic even within complex, tunneled environments.
+﻿
+ The overall architecture of **SSH-FD** is depicted in **Fig** below:
 
 ![Overall SSH-FD Architecture](https://github.com/user-attachments/assets/4bd070ba-7cd7-4b95-b32c-2779c749c83b)
 
