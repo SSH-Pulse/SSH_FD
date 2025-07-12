@@ -107,26 +107,11 @@ To run the code, the following Python libraries are required:
 
 ---
 
-## **Usage**
+### **Usage**
 
-### Training the Model
 
 To train the model, run the `SSH_FD_main.py` script. It will automatically load the configuration from `config.py` and start the training process.
 
 ```bash
 python SSH_FD_main.py --config config/config_file.yaml
-```
 
-### Evaluating the Model
-
-After training, you can evaluate the model's performance by running the evaluation script (`train.py` or `SSH_FD_main.py` with appropriate flags).
-
----
-
-## **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-This **README** provides a high-level overview of the project’s functionality, file structure, and usage. It serves as a guide for users to understand the project’s purpose, train the model, and evaluate its performance efficiently.
