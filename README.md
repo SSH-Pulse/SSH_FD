@@ -113,5 +113,5 @@ To run the code, the following Python libraries are required:
 To train the model, run the `SSH_FD_main.py` script. It will automatically load the configuration from `config.py` and start the training process.
 
 ```bash
-python SSH_FD_main.py --config config/config_file.yaml
+python SSH_FD_main.py
 
