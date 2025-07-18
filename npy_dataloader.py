@@ -225,15 +225,3 @@ def data_loader_fre(dataset_name, pkt_num, beta, data_save, combination, final_d
     )
 
     return train_loader, test_loader
-
-
-'''📄 npy_dataloader.py — Feature Extraction and Data Loading Module
-This module is responsible for:
-
-Extracting multiple statistical and signal-domain features from packet lengths and timestamps.
-
-Dynamically selecting feature combinations.
-
-Generating and saving structured .npy feature arrays from raw JSON data.
-
-Preparing PyTorch DataLoader objects for both training and evaluation.'''
