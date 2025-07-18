@@ -147,14 +147,3 @@ class Seq2Seq(nn.Module):
         flow_res = self.gmp(burst_res).squeeze(-1)
 
         return burst_res, flow_res
-
-
-'''This module defines a complete Seq2Seq model with attention, including:
-
-Encoder: Bidirectional LSTM-based encoder.
-
-Attention: Additive attention mechanism inspired by Bahdanau et al.
-
-Decoder: Attentive LSTM-based decoder that combines embeddings and context.
-
-'''
