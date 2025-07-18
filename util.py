@@ -42,6 +42,3 @@ def get_logger(logger_name, log_file, level=logging.INFO):
     logger.addHandler(fileHandler)  # Add the file handler to the logger
 
     return logger  # Return the configured logger
-
-
-'''This Python script provides utility functions for managing GPU memory, setting up a loggers.'''
