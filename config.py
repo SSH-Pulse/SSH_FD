@@ -72,5 +72,3 @@ FEATURES_SHORTNAMES = {
 # ('Sc', 'Ac'), ('Sc', 'Sm'), ('Sc', 'Tm'), ('Ac', 'Sm'), ...
 # ('Sc', 'Ac', 'Sm', 'Tm') — Full feature set
 FEATURE_COMBINATION = ('Sc', 'Ac', 'Tm')
-
-'''This configuration module serves as the centralized control panel for the entire training and evaluation pipeline. It contains all critical hyperparameters, architectural settings, dataset paths, logging rules, and feature selection logic in a structured and readable format.'''
