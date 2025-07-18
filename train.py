@@ -282,8 +282,3 @@ def calculate_burst_f1(pd, gt):
     accuracy = (true_pos + true_neg) / (true_pos + true_neg + false_pos + false_neg + 1e-6)
 
     return accuracy, precision, recall, f1
-
-
-'''This Python script is designed for training and evaluating a deep learning model for burst detection and flow classification tasks. It incorporates a Seq2Seq model, where the Encoder and Decoder components are used to handle sequential data. The model is optimized with Adam, and the training process incorporates multiple loss functions, including binary cross-entropy losses for both burst detection and flow classification tasks. Additionally, it utilizes techniques like gradient clipping for stable training and early stopping to prevent overfitting.
-
-The code also includes utility functions to evaluate the model's performance using various metrics like F1-score, precision, recall, and accuracy for both burst detection and flow classification.'''
