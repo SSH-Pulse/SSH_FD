@@ -171,13 +171,3 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt as e:
         print("[STOP]", e)
-
-'''This script handles the training of a sequence-to-sequence model that processes features extracted from network packet data. It takes in preprocessed features, trains a model, and evaluates it using several metrics. The script is modular, where the main components include:
-
-Encoder and Decoder Models: These define the architecture of the sequence-to-sequence model.
-
-Training Pipeline: Includes the training loop, validation, and early stopping mechanisms.
-
-Feature Combination: The model is designed to handle multiple types of features from the dataset, which are combined before feeding them into the model.
-
-Configuration and Logging: The script supports logging and configuration file-driven training, ensuring it’s easy to adjust parameters for different experiments.'''
